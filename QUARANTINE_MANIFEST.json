@@ -1,0 +1,135 @@
+{
+  "rule": "R-59.2.2: any barred-token hit stays out of git, in an ignored path, with the reason recorded; pinned here by sha256",
+  "files": {
+    "ball_socket/geometry_provenance.py": {
+      "sha256": "f96886d0c49aacfe05cbf198f76b526a3da8b9085918047ef29c584c28d8f0ff",
+      "bytes": 5034,
+      "reason": "industry-track test conditions and proprietary material identity (quarantined module, R-46.1)"
+    },
+    "ball_socket/campaign_config_v5.py": {
+      "sha256": "27a391bcd1a59ebd377019ee1b8f0af7d8d844ff0a62a752dbc6e1724065e9dd",
+      "bytes": 69463,
+      "reason": "carries the ERR-20 inertia sensitivity derived at the barred condition, in the frozen registration text; the frozen file is not edited (ERR-20)"
+    },
+    "ball_socket/campaign_config_v6.py": {
+      "sha256": "3fb56ed82f3f373625928d7bc5474fe417905794a8f2b50bc57ad5deb3657b09",
+      "bytes": 103800,
+      "reason": "carries the ERR-20 inertia sensitivity derived at the barred condition, in the frozen registration text; the frozen file is not edited (ERR-20)"
+    },
+    "ball_socket/campaign_frozen_v5.json": {
+      "sha256": "bc104be7d765e45c90d6b8d180ebcd86fbe9da674aebd6259368b81044f1152b",
+      "bytes": 41031,
+      "reason": "carries the ERR-20 inertia sensitivity derived at the barred condition, in the frozen registration text; the frozen file is not edited (ERR-20)"
+    },
+    "ball_socket/campaign_frozen_v6.json": {
+      "sha256": "fb044c295c7c82e1629ec14a51f9f23ebbfffdf1aca6aa354e132514f88cb2fe",
+      "bytes": 57782,
+      "reason": "carries the ERR-20 inertia sensitivity derived at the barred condition, in the frozen registration text; the frozen file is not edited (ERR-20)"
+    },
+    "ball_socket/campaign_frozen_v7.json": {
+      "sha256": "ee430953c4fbf129955591aa69a867af679b94991bb67e2e482e23464b740d9d",
+      "bytes": 64757,
+      "reason": "carries the ERR-20 inertia sensitivity derived at the barred condition, in the frozen registration text; the frozen file is not edited (ERR-20)"
+    },
+    "ball_socket/campaign_frozen_v8.json": {
+      "sha256": "fd6a3f9622911cda333c7e9221f2090cf6a0b7ce63e2f33f561dea0d71853b58",
+      "bytes": 91252,
+      "reason": "carries the ERR-20 inertia sensitivity derived at the barred condition, in the frozen registration text; the frozen file is not edited (ERR-20)"
+    },
+    "scripts/cme_report_verify.py": {
+      "sha256": "d6765cd1de15227d6e37223e8188c3b8a6ec769b8e515af66fbc4a1414111fe7",
+      "bytes": 6231,
+      "reason": "industry-report track: endurance schedule (speed, durations, cycle counts)"
+    },
+    "scripts/run_E13_extremum.py": {
+      "sha256": "827ecf5ef9b4caf5e3cc1b72e4938b2ed2cc84a2d41aee950b7dcf4def404744",
+      "bytes": 19992,
+      "reason": "names the barred speed and duration in its docstring and in its 'excluded' output string (lines 27-28, 133-134)"
+    },
+    "scripts/barred_tokens.local.json": {
+      "sha256": "7f42a0a50efc32be058c2ed56809c9659b973ba09ea1206cd2420b15899ed001",
+      "bytes": 723,
+      "reason": "the scan's own patterns spell the barred conditions"
+    },
+    "results/ch9/E13_spec_v2.json": {
+      "sha256": "7ce34c8e72008225989762fda68472a9480ac0af54805bc214534ce99a61ad0c",
+      "bytes": 6569,
+      "reason": "frozen E13 spec; its 'excluded' entry names the barred speed and duration (:161)"
+    },
+    "results/ch9/boxG_E15_spec.json": {
+      "sha256": "376bfb06d2261d5d27cc1ce37d41fc52b0f4efcc7b8bcdf12f6fa63e3e4d1afc",
+      "bytes": 8664,
+      "reason": "frozen, SIGNED box-G spec (376bfb06...); inherits E13's 'excluded' entry (:159)"
+    },
+    "preregistration_DRAFT.md": {
+      "sha256": "f03578331465ea49161f963ce1efd39a3ea0af30665d449c6f9c71b4ce746247",
+      "bytes": 6605,
+      "reason": "the original E5 statement at the barred speed, with the observed-failure correlation (re-based by the material-track ruling)"
+    },
+    "preregistration_v4_DRAFT.md": {
+      "sha256": "43d2d29f80ecdf0fc1cc57397e69667a29c3543f9d8fcebfa56640cd63cdfb0e",
+      "bytes": 12176,
+      "reason": "cites the industry collaborator's EHD films, not yet cleared for citation"
+    },
+    "preregistration_v4_FROZEN.md": {
+      "sha256": "87db922195061e3ac4741694c8eade863ab156259f9b202b2f9e36bf55fefdfc",
+      "bytes": 13095,
+      "reason": "the same citation, in the frozen copy"
+    },
+    "reports/boxc_constants_pass2_applied.md": {
+      "sha256": "575d2580d3be25ca45d94c01a1888c174b17b307c6c44e043a5aa231c6ab6cca",
+      "bytes": 6548,
+      "reason": "quotes the ERR-20 sentence and the condition it was computed at"
+    },
+    "reports/boxc_decomposition_handback.md": {
+      "sha256": "16c4cde5c8a2e13b3dc4500aca8fc95b0588aa7c9b35964de2563375af53a0f0",
+      "bytes": 20048,
+      "reason": "the inertia bound at the barred speed (the ERR-20 source)"
+    },
+    "reports/boxe_errata.md": {
+      "sha256": "50d0fe253a6c362bcf4c8492336a6da0d08fc9605fb89342a3ff72e5fcf71318",
+      "bytes": 38571,
+      "reason": "ERR-20's entry spells the barred condition and the derived values"
+    },
+    "reports/cme_export_handback.md": {
+      "sha256": "0b36404eb4c40ac0d6ebe7c5688f07006d2c2a424125f76a77e57b405d7f1786",
+      "bytes": 8471,
+      "reason": "industry-report track: endurance cycle counts at the barred schedule"
+    },
+    "reports/partner_boundary_sweep_20260920.md": {
+      "sha256": "d9ecc8342753d01badbecbad231c53126b3eae402389a1bebc7f9c1194d546df",
+      "bytes": 6917,
+      "reason": "the boundary sweep tabulates the barred conditions by design"
+    },
+    "reports/partner_questions.md": {
+      "sha256": "98f3f77b5c147c0607332f4080c05080be69ddeac1f00d9fe03a57d82dcd7ab1",
+      "bytes": 2687,
+      "reason": "industry-track questions naming proprietary drawing and material identifiers"
+    },
+    "reports/socket_material_candidates.md": {
+      "sha256": "97f1910c90e8e39b8c02c7ccb15a73dcb66b7c4dbeb8c6d470cf958c1d392292",
+      "bytes": 3341,
+      "reason": "names the proprietary socket material and its specification"
+    },
+    "reports/r47_handback.md": {
+      "sha256": "011f8e50dfd5f3a9e77d737c20bb3d01fee1d214ccf6c9c368e24c3818791e76",
+      "bytes": 10038,
+      "reason": "quotes the ERR-20 sentence and the barred speed"
+    },
+    "reports/r59_handback.md": {
+      "sha256": "78bc15895d6f87e9969838d46a215c90269dc5235ac4c84df07e3bac794d901e",
+      "bytes": 14578,
+      "reason": "spells the scan's pattern classes and the ERR-20 values"
+    },
+    "reports/r60_handback.md": {
+      "sha256": "d041cbd812d71ad71ac5f35bc678d2059e278b1613917cca201aec1bb361e73b",
+      "bytes": 14744,
+      "reason": "spells the barred speed while classifying false positives"
+    },
+    "reports/r61_handback.md": {
+      "sha256": "252d4ae7a4c168c8956a3bc17a8cc2937976ba517e18f66bb712f1ad557c6f06",
+      "bytes": 14595,
+      "reason": "quotes the ERR-20 sentence (B5 table)"
+    }
+  }
+}

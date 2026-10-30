@@ -1,0 +1,79 @@
+{
+  "table": {
+    "sha256": "f6f9ab445cc41866812525899da44a021c32e5d486cf8b52a282bc68a2a76714",
+    "source": "Appendix 2, table on p.632",
+    "doi": "10.1243/PIME_PROC_1970_185_069_02",
+    "entries": 54
+  },
+  "quadrature_vs_exact": {
+    "worst_abs_diff": 4.996003610813204e-16,
+    "n_entries": 54,
+    "tolerance": 1e-10,
+    "passed": true
+  },
+  "printed_vs_exact": {
+    "worst_abs_diff": 1.452941231369631e-05,
+    "entries_beyond_half_ulp": [
+      {
+        "h": 0.0,
+        "order": "F_5/2",
+        "printed": 0.61664,
+        "exact": 0.6166342189968439,
+        "abs_diff": 5.781003156068998e-06
+      },
+      {
+        "h": 1.0,
+        "order": "F_0",
+        "printed": 0.15865,
+        "exact": 0.15865525393145705,
+        "abs_diff": 5.253931457033234e-06
+      },
+      {
+        "h": 1.0,
+        "order": "F_1",
+        "printed": 0.08333,
+        "exact": 0.0833154705876863,
+        "abs_diff": 1.452941231369631e-05
+      }
+    ],
+    "note": "the article's own rounding, NOT solver error.  F_1(1.0) printed 0.08333 against an exact 0.08331547 is about 3 ULP; the other two are half-ULP round-down.  A typesetting error cannot be distinguished from a scan misread here, and does not need to be: the gate is on the exact column."
+  },
+  "recurrence": {
+    "on_table_exact": 2.7755575615628914e-17,
+    "on_solver": 5.082739784612045e-16,
+    "passed": true
+  },
+  "contact_area": {
+    "eta_beta_sigma_band": [
+      0.042426406871192854,
+      0.07071067811865477
+    ],
+    "max_fraction": 0.02467401100272341,
+    "bounded_by_one": true,
+    "monotone_decreasing": true,
+    "at_H_4": 1.5249565749279254e-07
+  },
+  "asymptotic_exponent": {
+    "ratios_to_quadrature": {
+      "6.0": 0.9486504590231222,
+      "10.0": 0.9931306546148215,
+      "12.0": 0.9966646190137056
+    },
+    "converges_to_one": true,
+    "note": "the article prints h^-n; the correct power is h^-(n+1).  The h^-n form diverges linearly in h.  Derivation in mixed.F_n_asymptotic."
+  },
+  "blocked_limbs": {
+    "entry_points": [
+      "boundary_shear: boundary_shear is DESCOPED from box C (ruling R-10"
+    ],
+    "note": "p_a, the plastic branch and psi cannot be gated until GT_PARAM_BAND.sigma_s_over_beta_a and HARDNESS_CONVERSION.H_ind_band_Pa are CITED.  Recorded so the gate's coverage is explicit: BS-V9 currently verifies the F_n machinery and the contact AREA, not the contact LOAD.",
+    "owed_when_unblocked": [
+      "p_a -> 0 for H >= the cut-off",
+      "plastic branch active exactly where GT Eq. 13 exceeds GT Eq. 7",
+      "dimensional check on the K-prime prefactor"
+    ]
+  },
+  "passed": true,
+  "gate": "BS-V9",
+  "spec": "BOX C: Greenwood-Tripp.  F_n by quadrature against the EXACT column of the article's own Appendix 2 table (54 entries, p.632); the Appendix 2 recurrence; A_c/A_n <= 1 and monotone decreasing in H; the printed-vs-exact deltas recorded separately so the article's rounding is never mistaken for solver error.  The p_a and plastic-cap limbs are BLOCKED and are recorded as blocked rather than skipped"
+}

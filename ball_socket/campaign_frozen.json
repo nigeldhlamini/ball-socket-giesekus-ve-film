@@ -1,0 +1,164 @@
+{
+  "config": {
+    "DRAFT": false,
+    "FROZEN_ON": "2026-07-27",
+    "N_audit": 2048,
+    "N_bo": 500,
+    "N_init": 18,
+    "N_seeds": 5,
+    "SIGNED_BY": "Nigel C. Dhlamini",
+    "alpha_fixed": 0.25,
+    "common_subbox_with_slipper": {
+      "eta_0": [
+        0.005,
+        0.2
+      ]
+    },
+    "constraints": {
+      "De_sq_max": 0.2,
+      "T_max_C": {
+        "mineral": 110.0,
+        "water_glycol": 60.0
+      },
+      "lambda_ratio_min": 3.0
+    },
+    "fluid_classes": [
+      "mineral",
+      "water_glycol"
+    ],
+    "geometry": {
+      "A_p_m2": 0.0002,
+      "R_b_m": 0.0065,
+      "domain": "annular fed film (pocket edge -> socket mouth)",
+      "theta_max_deg": 73.0,
+      "theta_min_band_deg": [
+        25.0,
+        36.0
+      ]
+    },
+    "hmin_floor_band_m": [
+      1.0075992506944416e-06,
+      1.5712276251390185e-06
+    ],
+    "input_space": [
+      {
+        "lower": 50.0,
+        "name": "omega",
+        "note": "RULING A2(i) pre-freeze extension 470 -> 475: the rated maximum corner (4500 min^-1 = 471.2 rad/s) must lie inside a campaign intended to cover rated operation",
+        "scale": "lin",
+        "units": "rad/s",
+        "upper": 475.0
+      },
+      {
+        "lower": 200000.0,
+        "name": "p_ch",
+        "note": "to the rated maximum corner (500 bar)",
+        "scale": "log",
+        "units": "Pa",
+        "upper": 50000000.0
+      },
+      {
+        "lower": 2e-06,
+        "name": "c0",
+        "note": "radial cold clearance; 2 um floor avoids the degenerate limit",
+        "scale": "lin",
+        "units": "m",
+        "upper": 3e-05
+      },
+      {
+        "lower": 20.0,
+        "name": "T_in",
+        "note": "per-fluid-class g2 still caps water-glycol entries",
+        "scale": "lin",
+        "units": "degC",
+        "upper": 110.0
+      },
+      {
+        "lower": 0.004,
+        "name": "eta_0",
+        "note": "RULING A2(i) pre-freeze extension 5.0e-3 -> 4.0e-3: hot mineral oil at rated temperature is genuinely 4-5 mPa s, so a floor excluding rated operation is mis-set.  NOTE: this axis is now a strict SUPERSET of the slipper's -- see COMMON_SUBBOX",
+        "scale": "log",
+        "units": "Pa.s",
+        "upper": 0.2
+      },
+      {
+        "lower": 1e-05,
+        "name": "lam",
+        "note": "as slipper INPUT_SPACE",
+        "scale": "log",
+        "units": "s",
+        "upper": 0.01
+      },
+      {
+        "lower": 0.05,
+        "name": "eta_s_ratio",
+        "note": "as slipper INPUT_SPACE",
+        "scale": "lin",
+        "units": "-",
+        "upper": 0.95
+      },
+      {
+        "lower": 0.1,
+        "name": "k_F_bs",
+        "note": "D2: F_app = k_F_bs * W_sq_ref (3 pi eta0 omega R_b^4 / c0^2); the 3 pi prefactor is a convention constant, not physics",
+        "scale": "log",
+        "units": "-",
+        "upper": 30.0
+      }
+    ],
+    "material_policy": "literature-standard steel-on-bronze (CITED); material identity enters only via alpha_th and sigma*",
+    "materials": {
+      "ball": "hardened bearing steel 100Cr6 class (CITED)",
+      "ball_constants": {
+        "E": 210000000000.0,
+        "alpha_th": 1.2e-05,
+        "nu": 0.3
+      },
+      "delta_alpha_th": 6e-06,
+      "socket": "leaded tin bronze CuSn12Pb class (CITED)",
+      "socket_E_Pa": 100000000000.0,
+      "socket_HB_range": [
+        80.0,
+        120.0
+      ],
+      "socket_alpha_th": 1.8e-05,
+      "socket_nu": 0.34
+    },
+    "oat_block": {
+      "alpha_th_rel": [
+        0.9,
+        1.0,
+        1.1
+      ],
+      "spin_ratio": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "theta_max_deg": [
+        66.0,
+        73.0,
+        80.0
+      ],
+      "theta_min_deg": [
+        25.0,
+        36.0
+      ]
+    },
+    "oat_n": 32,
+    "p_case_Pa": 100000.0,
+    "sigma_star_band_m": [
+      3.358664168981472e-07,
+      5.237425417130062e-07
+    ],
+    "sigma_star_band_narrow_superseded_m": [
+      4.444167526095298e-07,
+      5.237425417130062e-07
+    ],
+    "spin_ratio": 1.0,
+    "squeeze_phase": 1.0
+  },
+  "frozen_on": "2026-07-27",
+  "sha256": "2468949e2855c45263b112482e55d3c14af551e59152bd8f84d04573703a41f6",
+  "signed_by": "Nigel C. Dhlamini"
+}

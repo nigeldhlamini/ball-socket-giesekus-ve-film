@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "target": "2.0 +/- 0.1",
+  "annular": {
+    "observed_order": 2.0006257739275157,
+    "grids": [
+      24,
+      48,
+      96
+    ],
+    "l2_errors": [
+      4.359167403498771e-05,
+      1.0890359606239317e-05,
+      2.722117147282934e-06
+    ]
+  },
+  "pole_benchmark": {
+    "observed_order": 2.000512427337745,
+    "grids": [
+      24,
+      48,
+      96
+    ],
+    "l2_errors": [
+      0.00011602727963948836,
+      2.8990339542564995e-05,
+      7.246555375901613e-06
+    ]
+  },
+  "note": "annular = production domain (both Dirichlet ends); pole = cap benchmark path, exercised only in verification",
+  "gate": "BS-V2",
+  "spec": "Manufactured solution, order preserved: ANNULAR (both Dirichlet ends, production domain) and POLE (cap benchmark path)"
+}

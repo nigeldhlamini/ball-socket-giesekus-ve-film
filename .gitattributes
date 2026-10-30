@@ -1,0 +1,12 @@
+# R-60.1: files hashed on their BYTES are stored byte-for-byte (no end-of-line conversion),
+# so a checkout on any platform reproduces the hash.  Canonical-serialisation digests
+# (config_dict sha256) are EOL-invariant and need nothing.
+*.json      -text
+*.sha256    -text
+*FROZEN*.md -text
+# byte-hashed by REGISTRATION_SHA256 (campaign_config_v5.py:978, v6.py:1521: preregistration_v5_DRAFT.md)
+preregistration_*.md -text
+*.parquet   binary
+*.npz       binary
+# byte-hashed by ball_socket/memory_sign.assert_src_identity against Paper 2's copy
+src/rheology.py -text

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "residual_exponent": 1.9917321230701215,
+  "residual_target": "[1.8, 2.2]",
+  "residual_criterion_met": true,
+  "leading_coefficient": 0.49689081823897235,
+  "kernel_factor_measured": 0.7999999999258589,
+  "projection_factor_analytic": 0.6210344076946523,
+  "predicted_leading_coefficient": 0.49682752610967773,
+  "agreement_vs_analytic": 0.00012739255771565539,
+  "agreement_tolerance": 0.05,
+  "theta_range_deg": [
+    25.0,
+    73.0
+  ],
+  "eccentricity_of_fit": 0.0,
+  "quad_coefficient": -0.2508607645001173,
+  "De_sq": [
+    0.001,
+    0.002,
+    0.004,
+    0.008,
+    0.016
+  ],
+  "deviations": [
+    0.0004966232216967459,
+    0.0009927244417545777,
+    0.001983364246563979,
+    0.003958416743213511,
+    0.007883799228413535
+  ],
+  "FINDING": "The closed-form G is validated EXACTLY (0.0 %) against the solver when hdot is placed INSIDE the surface divergence (mobility form) in the concentric limit.  The implemented operator follows Ch.9 D1 and places hdot OUTSIDE the divergence (row scaling), which differs by ~7.8 % at eps -> 0 and ~16 % at eps = 0.1.  The two forms coincide only when hdot is spatially uniform (the planar slipper); on the sphere hdot ~ cos(theta) varies, so they do not.  Deciding which form Ch.9 should carry is a physics/chapter call for Chat/Nigel, NOT a code change.",
+  "EMBARGO": "leading_coefficient and projection factor remain EMBARGOED from thesis prose until Chat clears them",
+  "note": "annular production domain; residual-exponent criterion per Paper-1 p2_gate (the linear term IS the closure)",
+  "gate": "BS-V4",
+  "spec": "Squeeze-memory: residual exponent De_sq^2 in [1.8, 2.2] on the annular domain, with the kernel/geometry decomposition reported"
+}

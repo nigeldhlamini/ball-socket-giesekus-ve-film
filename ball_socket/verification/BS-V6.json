@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "l1_isothermal_invariant_rel_err": 0.0,
+  "l1_coupling_active_rel": 0.37823226249563935,
+  "q_min_guard": {
+    "Q_min": 7.5e-07,
+    "ample_outflow_L2": false,
+    "starved_L2": true,
+    "inward_L2": true
+  },
+  "brinkman": {
+    "Br_slow": 0.003622351755021118,
+    "Br_fast": 2.5758945813483503,
+    "threshold": 0.1
+  },
+  "V_char": "omega_b * R_b * sin(theta_max)",
+  "note": "annular domain; spherical L2 FVM (walls at T_in) wired in ball_socket/thermal.py and used by solve_equilibrium",
+  "gate": "BS-V6",
+  "spec": "Thermal L1 isothermal invariant + Q_min/Brinkman routing guard on the annular domain"
+}

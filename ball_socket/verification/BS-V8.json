@@ -1,0 +1,89 @@
+{
+  "tables": {
+    "table_1_rows": [
+      "1",
+      "1/3",
+      "1/6",
+      "1/9",
+      "3",
+      "6",
+      "9"
+    ],
+    "table_2_rows": [
+      "1",
+      "1/3",
+      "1/6",
+      "1/9",
+      "3",
+      "6",
+      "9"
+    ],
+    "complete": true,
+    "table_1_arity_ok": true,
+    "table_2_arity_ok": true,
+    "status_cited": true
+  },
+  "eq22_matches_table1": {
+    "C": 0.9,
+    "r": 0.56,
+    "bitwise": true
+  },
+  "limits": {
+    "phi_x_at_1e3": 1.0,
+    "phi_x_to_one": true,
+    "Phi_s_at_1e3": 3.005508182699477e-109,
+    "Phi_s_to_zero": true
+  },
+  "eq27_identity": {
+    "1/9": true,
+    "1/6": true,
+    "1/3": true,
+    "1": true,
+    "3": true,
+    "6": true,
+    "9": true
+  },
+  "eq27_holds": true,
+  "isotropic_identity_bitwise": true,
+  "two_field_operator": {
+    "scalar_vs_pair_nnz_diff": 0,
+    "bitwise_identical": true,
+    "anisotropic_actually_differs": true
+  },
+  "mms_order_after_extension": {
+    "observed_order": 2.0006257739275157,
+    "grids": [
+      24,
+      48,
+      96
+    ],
+    "l2_errors": [
+      4.359167403498771e-05,
+      1.0890359606239317e-05,
+      2.722117147282934e-06
+    ]
+  },
+  "mms_order_ok": true,
+  "variance_ratio": {
+    "V_r1": 0.01977785513116673,
+    "V_r2": 0.9802221448688333,
+    "sums_to_one": true,
+    "phi_s_at_H2": -0.6978524201734443,
+    "differs_from_single_surface": true,
+    "note": "steel-on-bronze Rq differ ~10x, so the terms do not cancel"
+  },
+  "average_gap": {
+    "ratios_h_T_over_h": [
+      1.8892041403907003,
+      1.0833154705876866,
+      1.0001273847723497,
+      1.0000000000000002,
+      1.0
+    ],
+    "never_below_one": true,
+    "tends_to_one": true
+  },
+  "passed": true,
+  "gate": "BS-V8",
+  "spec": "BOX C: Patir-Cheng flow factors.  Tables 1-4 complete and typed; the Eq. 22 closed form agrees with the Table 1 gamma=1 row; phi_x -> 1 and Phi_s -> 0 as H -> inf; the Eq. 27 identity phi_y(H,gamma) = phi_x(H,1/gamma) holds on every tabulated gamma; at gamma=1 phi_theta == phi_phi BITWISE; the two-field diffusion operator reproduces the scalar operator BITWISE when D_theta == D_phi, and the MMS order is unchanged by the extension; h_T_bar >= h with equality in the smooth limit"
+}

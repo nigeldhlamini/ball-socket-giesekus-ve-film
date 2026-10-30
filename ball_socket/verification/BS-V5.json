@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "ucm_M_over_eta_p": 1.0,
+  "sof_M_over_eta_p": 0.9999957498393874,
+  "M_over_eta_p_ball_Lambda2p5": 0.05804643933382026,
+  "M_over_eta_p_slipper_Lambda2000": 1.0151590818835292e-05,
+  "ratio_ball_over_slipper": 5717.964836222587,
+  "note": "constitutive layer imported from src.rheology, not re-derived",
+  "gate": "BS-V5",
+  "spec": "UCM/SOF limits M -> eta_p; ball-socket vs slipper Lambda regime contrast (constitutive, geometry-independent)"
+}

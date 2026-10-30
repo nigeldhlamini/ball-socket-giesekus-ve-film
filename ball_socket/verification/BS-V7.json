@@ -1,0 +1,55 @@
+{
+  "delta_alpha_zero_bitwise": {
+    "h_min": true,
+    "F": true,
+    "T_max": true
+  },
+  "delta_alpha_zero_n_outer": 1,
+  "delta_alpha_zero_c_equals_c0": true,
+  "manufactured": {
+    "c_closed_form": 1.6809078953548968e-05,
+    "c_converged": 1.680797211787508e-05,
+    "rel_error": 6.584749092721214e-05,
+    "contraction_L": 0.0078,
+    "tol_c": 0.0001,
+    "derived_error_bound": 0.00010078613182826043,
+    "within_derived_bound": true,
+    "n_outer": 12,
+    "monotone": true,
+    "steps_shrink": true
+  },
+  "sign": {
+    "delta_alpha_th": 6e-06,
+    "delta_alpha_positive": true,
+    "heating_opens_clearance": true,
+    "cooling_closes_clearance": true
+  },
+  "fork_F1": {
+    "by_route": {
+      "L1": {
+        "route": "L1",
+        "c_bulk": 1.4866268583942772e-05,
+        "c_peak": 1.4866268583942772e-05,
+        "arms_identical": true,
+        "T_max_minus_T_bulk_K": 0.0,
+        "n_outer_bulk": 8,
+        "n_outer_peak": 8
+      },
+      "L2": {
+        "route": "L2",
+        "c_bulk": 8.795981619507073e-06,
+        "c_peak": 8.796473168814556e-06,
+        "arms_identical": false,
+        "T_max_minus_T_bulk_K": 0.009868493049282279,
+        "n_outer_bulk": 1,
+        "n_outer_peak": 2
+      }
+    },
+    "arms_coincide_on_L1": true,
+    "arms_differ_on_L2": true,
+    "note": "both arms are implemented and neither is a default; box C reports both (standing rule 18)"
+  },
+  "passed": true,
+  "gate": "BS-V7",
+  "spec": "BOX C: thermal-clearance closure.  Delta_alpha=0 reproduces the closure-off path bitwise; the fixed point matches the closed-form solution of c = c0 + Dalpha R_b (T(c) - T_in) on a manufactured T(c) with known slope, and converges monotonically; the sign is right (heating opens the bronze-on-steel clearance).  FIRST VERIFICATION, not a regression guard: no prior gate touched thermal_clearance (see reports/boxb_errata.md E-4)"
+}

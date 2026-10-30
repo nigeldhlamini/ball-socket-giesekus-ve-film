@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "observed_order": 1.9898182731624956,
+  "target": "2.0 +/- 0.1",
+  "grids": [
+    24,
+    48,
+    96
+  ],
+  "rel_errors": [
+    0.0005664090027702756,
+    0.00014294932479184475,
+    3.5903780100737315e-05
+  ],
+  "axisymmetry_dev": [
+    1.6816515114261847e-15,
+    3.4289083435835756e-15,
+    8.447022587918986e-15
+  ],
+  "note": "annular production domain; full-cap literature benchmarks (quadrature squeeze, closed-form wedge) in tests/test_spherical.py",
+  "gate": "BS-V1",
+  "spec": "Newtonian annular film vs the exact axisymmetric solution p = A ln(tan(theta/2)) + B; grid order 2.0 +/- 0.1.  Full-cap literature benchmarks in tests/test_spherical.py"
+}

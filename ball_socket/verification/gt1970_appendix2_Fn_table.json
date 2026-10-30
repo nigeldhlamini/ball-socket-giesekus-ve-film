@@ -1,0 +1,300 @@
+{
+  "artefact": "gt1970_appendix2_Fn_table",
+  "source": {
+    "authors": "Greenwood, J.A. and Tripp, J.H.",
+    "title": "The Contact of Two Nominally Flat Rough Surfaces",
+    "journal": "Proceedings of the Institution of Mechanical Engineers",
+    "volume": "185",
+    "part": "48/71",
+    "year": "1970-71",
+    "pages": "625-633",
+    "doi": "10.1243/PIME_PROC_1970_185_069_02",
+    "location_in_source": "Appendix 2, table on p.632",
+    "provenance": "PRIMARY - transcribed from the article PDF supplied by N. Dhlamini"
+  },
+  "definition": "F_n(h) = (1/sqrt(2*pi)) * integral_h^inf (u-h)^n exp(-u^2/2) du",
+  "recurrence_in_source": "F_{n+1}(h) = n*F_{n-1}(h) - h*F_n(h)",
+  "asymptotic_in_source": "F_n(h) ~ (n!/sqrt(2*pi)) h^-n exp(-h^2/2) [1 - (n+1)(n+2)/(2h^2) + ...]",
+  "orders": [
+    "0",
+    "1/2",
+    "1",
+    "3/2",
+    "2",
+    "5/2"
+  ],
+  "printed_precision_dp": 5,
+  "rows": [
+    {
+      "h": 0.0,
+      "F_0": {
+        "printed": 0.5,
+        "exact": 0.5
+      },
+      "F_1/2": {
+        "printed": 0.41109,
+        "exact": 0.4110894793312293
+      },
+      "F_1": {
+        "printed": 0.39894,
+        "exact": 0.3989422804014327
+      },
+      "F_3/2": {
+        "printed": 0.43002,
+        "exact": 0.4300199936622598
+      },
+      "F_2": {
+        "printed": 0.5,
+        "exact": 0.5
+      },
+      "F_5/2": {
+        "printed": 0.61664,
+        "exact": 0.6166342189968439
+      }
+    },
+    {
+      "h": 0.5,
+      "F_0": {
+        "printed": 0.30854,
+        "exact": 0.3085375387259869
+      },
+      "F_1/2": {
+        "printed": 0.22534,
+        "exact": 0.2253355816973116
+      },
+      "F_1": {
+        "printed": 0.1978,
+        "exact": 0.19779655740130603
+      },
+      "F_3/2": {
+        "printed": 0.1952,
+        "exact": 0.19520360374379064
+      },
+      "F_2": {
+        "printed": 0.20964,
+        "exact": 0.20963926002533387
+      },
+      "F_5/2": {
+        "printed": 0.2404,
+        "exact": 0.2404015706740721
+      }
+    },
+    {
+      "h": 1.0,
+      "F_0": {
+        "printed": 0.15865,
+        "exact": 0.15865525393145705
+      },
+      "F_1/2": {
+        "printed": 0.10415,
+        "exact": 0.1041536753078577
+      },
+      "F_1": {
+        "printed": 0.08333,
+        "exact": 0.0833154705876863
+      },
+      "F_3/2": {
+        "printed": 0.07567,
+        "exact": 0.07566817739097507
+      },
+      "F_2": {
+        "printed": 0.07534,
+        "exact": 0.07533978334377076
+      },
+      "F_5/2": {
+        "printed": 0.08056,
+        "exact": 0.08056233557081147
+      }
+    },
+    {
+      "h": 1.5,
+      "F_0": {
+        "printed": 0.06681,
+        "exact": 0.06680720126885807
+      },
+      "F_1/2": {
+        "printed": 0.03988,
+        "exact": 0.039881517654695796
+      },
+      "F_1": {
+        "printed": 0.02931,
+        "exact": 0.02930679376260463
+      },
+      "F_3/2": {
+        "printed": 0.02464,
+        "exact": 0.024639480307483735
+      },
+      "F_2": {
+        "printed": 0.02285,
+        "exact": 0.022847010624951123
+      },
+      "F_5/2": {
+        "printed": 0.02286,
+        "exact": 0.02286305602081809
+      }
+    },
+    {
+      "h": 2.0,
+      "F_0": {
+        "printed": 0.02275,
+        "exact": 0.02275013194817921
+      },
+      "F_1/2": {
+        "printed": 0.01248,
+        "exact": 0.012480040296439067
+      },
+      "F_1": {
+        "printed": 0.00849,
+        "exact": 0.008490702616829637
+      },
+      "F_3/2": {
+        "printed": 0.00665,
+        "exact": 0.006648177623587093
+      },
+      "F_2": {
+        "printed": 0.00577,
+        "exact": 0.005768726714519932
+      },
+      "F_5/2": {
+        "printed": 0.00542,
+        "exact": 0.005423705197484414
+      }
+    },
+    {
+      "h": 2.5,
+      "F_0": {
+        "printed": 0.00621,
+        "exact": 0.006209665325776135
+      },
+      "F_1/2": {
+        "printed": 0.00316,
+        "exact": 0.0031590230326521717
+      },
+      "F_1": {
+        "printed": 0.002,
+        "exact": 0.0020041371791281993
+      },
+      "F_3/2": {
+        "printed": 0.00147,
+        "exact": 0.0014699382395379915
+      },
+      "F_2": {
+        "printed": 0.0012,
+        "exact": 0.0011993223779556365
+      },
+      "F_5/2": {
+        "printed": 0.00106,
+        "exact": 0.0010636889501332788
+      }
+    },
+    {
+      "h": 3.0,
+      "F_0": {
+        "printed": 0.00135,
+        "exact": 0.0013498980316300946
+      },
+      "F_1/2": {
+        "printed": 0.00064,
+        "exact": 0.0006418504393485508
+      },
+      "F_1": {
+        "printed": 0.00038,
+        "exact": 0.0003821543170477236
+      },
+      "F_3/2": {
+        "printed": 0.00026,
+        "exact": 0.0002639675542694673
+      },
+      "F_2": {
+        "printed": 0.0002,
+        "exact": 0.00020343508048692373
+      },
+      "F_5/2": {
+        "printed": 0.00017,
+        "exact": 0.00017087299621442438
+      }
+    },
+    {
+      "h": 3.5,
+      "F_0": {
+        "printed": 0.00023,
+        "exact": 0.00023262907903552504
+      },
+      "F_1/2": {
+        "printed": 0.0001,
+        "exact": 0.00010407145290773235
+      },
+      "F_1": {
+        "printed": 6e-05,
+        "exact": 5.848091842142244e-05
+      },
+      "F_3/2": {
+        "printed": 4e-05,
+        "exact": 3.8227077760961094e-05
+      },
+      "F_2": {
+        "printed": 3e-05,
+        "exact": 2.7945864560546504e-05
+      },
+      "F_5/2": {
+        "printed": 2e-05,
+        "exact": 2.2312407198234688e-05
+      }
+    },
+    {
+      "h": 4.0,
+      "F_0": {
+        "printed": 3e-05,
+        "exact": 3.1671241833119924e-05
+      },
+      "F_1/2": {
+        "printed": 1e-05,
+        "exact": 1.340666992449641e-05
+      },
+      "F_1": {
+        "printed": 1e-05,
+        "exact": 7.145258432405667e-06
+      },
+      "F_3/2": {
+        "printed": 0.0,
+        "exact": 4.439155958539252e-06
+      },
+      "F_2": {
+        "printed": 0.0,
+        "exact": 3.090208103497254e-06
+      },
+      "F_5/2": {
+        "printed": 0.0,
+        "exact": 2.353381052587606e-06
+      }
+    }
+  ],
+  "transcription_check": {
+    "method": "independent mpmath quadrature at 40 dps; integer orders additionally cross-checked against closed forms F_0=Q(h), F_1=phi(h)-h*Q(h), F_2=(1+h^2)Q(h)-h*phi(h), agreeing to <1e-30",
+    "entries_checked": 54,
+    "entries_beyond_half_ulp": [
+      {
+        "h": 0.0,
+        "order": "5/2",
+        "printed": 0.61664,
+        "exact": 0.6166342189968439,
+        "abs_diff": 5.781003156085748e-06
+      },
+      {
+        "h": 1.0,
+        "order": "0",
+        "printed": 0.15865,
+        "exact": 0.15865525393145705,
+        "abs_diff": 5.253931457051415e-06
+      },
+      {
+        "h": 1.0,
+        "order": "1",
+        "printed": 0.08333,
+        "exact": 0.0833154705876863,
+        "abs_diff": 1.4529412313701616e-05
+      }
+    ]
+  },
+  "gate_guidance": "Gate the solver's quadrature against the EXACT column, not the PRINTED column. The printed values carry the article's own 5-dp rounding and at least one entry departs from the exact value by more than half a unit in the last place. Assert |solver - exact| < 1e-10 and, separately, |printed - exact| <= the tolerance recorded here, so that a future reader can see which discrepancies are the article's and which would be the solver's."
+}

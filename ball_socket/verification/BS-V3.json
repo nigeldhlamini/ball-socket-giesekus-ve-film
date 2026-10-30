@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "newtonian_limit_exact": true,
+  "gnf_converged": true,
+  "gnf_iterations": 22,
+  "shear_thinning_direction_ok": true,
+  "eta_min_over_eta0": 0.20504833158878116,
+  "gate": "BS-V3",
+  "spec": "GNF/constitutive layer imported unchanged: Newtonian limit exact on the annular domain; Picard convergence"
+}

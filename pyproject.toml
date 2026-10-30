@@ -1,0 +1,25 @@
+[project]
+name = "ball-socket-giesekus-ve-film"
+version = "0.3.0"
+description = "Giesekus viscoelastic squeeze film in the piston-slipper ball-socket joint (Paper 3)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Nigel C. Dhlamini", email = "dhlnig001@myuct.ac.za"}
+]
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+    "pandas>=1.5",
+    "pyarrow>=10",
+    "matplotlib>=3.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "ball_socket/tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]

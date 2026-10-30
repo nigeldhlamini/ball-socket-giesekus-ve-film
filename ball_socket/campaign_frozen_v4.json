@@ -1,0 +1,158 @@
+{
+  "config": {
+    "DRAFT": false,
+    "FROZEN_ON": "2026-07-27",
+    "N_audit": 8192,
+    "N_bo": 500,
+    "N_init": 18,
+    "N_seeds": 5,
+    "SIGNED_BY": "Nigel C. Dhlamini",
+    "acknowledged_omission": "inertial and centrifugal contributions to F_app neglected (quasi-static piston force)",
+    "alpha_fixed": 0.25,
+    "analysis_convention": "Binding splits conditional on convergence; non-convergence (blow-up) fraction reported alongside in every table; blow-up treated as the limiting case of film failure, not missing data; infrastructure error rows excluded from all label statistics and reported separately.",
+    "box": "B",
+    "common_subbox_with_slipper": {
+      "eta_0": [
+        0.005,
+        0.2
+      ]
+    },
+    "constraints": {
+      "De_sq_max": 0.2,
+      "T_max_C": {
+        "mineral": 110.0,
+        "water_glycol": 60.0
+      },
+      "lambda_ratio_min": 3.0
+    },
+    "e5_fluid_triplet": {
+      "eta_s_ratio": 0.95,
+      "lam": 1e-05
+    },
+    "fluid_classes": [
+      "mineral",
+      "water_glycol"
+    ],
+    "geometry": {
+      "A_p_m2": 0.0002,
+      "R_b_m": 0.0065,
+      "domain": "annular fed film",
+      "theta_max_deg": 73.0,
+      "theta_min_axis_deg": [
+        20.0,
+        40.0
+      ]
+    },
+    "hmin_floor_band_m": [
+      1.0075992506944416e-06,
+      1.5712276251390185e-06
+    ],
+    "input_space": [
+      {
+        "lower": 50.0,
+        "name": "omega",
+        "note": "rated envelope; pre-freeze extension 470 -> 475 carried from box A",
+        "scale": "lin",
+        "units": "rad/s",
+        "upper": 475.0
+      },
+      {
+        "lower": 2000000.0,
+        "name": "p_ch",
+        "note": "NOW SETS THE LOAD: F_app = p_ch * A_p.  Floor raised 2.0e5 -> 2.0e6 (20 bar): this is a CLOSED-CIRCUIT pump, so the chamber never sees 2 bar -- during suction the low-pressure side is held at charge/boost pressure (~20-30 bar), and a 2 bar floor samples states the machine does not occupy.  Scale log -> LINEAR: load enters the constraints through the linearly-acting F_app = p_ch*A_p on a bounded envelope, so uniform coverage in p_ch is the natural choice; log scaling earns its place for order-of-magnitude parameters with multiplicative response (eta_0, lambda), which this is not",
+        "scale": "lin",
+        "units": "Pa",
+        "upper": 50000000.0
+      },
+      {
+        "lower": 2e-06,
+        "name": "c0",
+        "note": "radial cold clearance",
+        "scale": "lin",
+        "units": "m",
+        "upper": 3e-05
+      },
+      {
+        "lower": 20.0,
+        "name": "T_in",
+        "note": "per-fluid-class g2 ceilings still cap water-glycol",
+        "scale": "lin",
+        "units": "degC",
+        "upper": 110.0
+      },
+      {
+        "lower": 0.004,
+        "name": "eta_0",
+        "note": "pre-freeze extension carried from box A; strict SUPERSET of the slipper axis -- see COMMON_SUBBOX_WITH_SLIPPER",
+        "scale": "log",
+        "units": "Pa.s",
+        "upper": 0.2
+      },
+      {
+        "lower": 1e-05,
+        "name": "lam",
+        "note": "as slipper INPUT_SPACE",
+        "scale": "log",
+        "units": "s",
+        "upper": 0.01
+      },
+      {
+        "lower": 0.05,
+        "name": "eta_s_ratio",
+        "note": "as slipper INPUT_SPACE",
+        "scale": "lin",
+        "units": "-",
+        "upper": 0.95
+      },
+      {
+        "lower": 20.0,
+        "name": "theta_min_deg",
+        "note": "feed-pocket edge; the physical control on the relief fraction beta = A_pocket/A_p.  Widened from the representative [25, 36] because it is now a design axis, not a geometric uncertainty",
+        "scale": "lin",
+        "units": "deg",
+        "upper": 40.0
+      }
+    ],
+    "load_model": "F_app = p_ch * A_p (coupled); F_pocket = p_ch * A_pocket; F_hyd > 0 by construction",
+    "materials": {
+      "ball": "hardened bearing steel 100Cr6 class (CITED)",
+      "ball_constants": {
+        "E": 210000000000.0,
+        "alpha_th": 1.2e-05,
+        "nu": 0.3
+      },
+      "delta_alpha_th": 6e-06,
+      "socket": "leaded tin bronze CuSn12Pb class (CITED)",
+      "socket_E_Pa": 100000000000.0,
+      "socket_alpha_th": 1.8e-05,
+      "socket_nu": 0.34
+    },
+    "oat_block": {
+      "alpha_th_rel": [
+        0.9,
+        1.0,
+        1.1
+      ],
+      "spin_ratio": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "theta_max_deg": [
+        66.0,
+        73.0,
+        80.0
+      ]
+    },
+    "oat_n": 32,
+    "p_case_Pa": 100000.0,
+    "sigma_star_band_m": [
+      3.358664168981472e-07,
+      5.237425417130062e-07
+    ],
+    "spin_ratio": 1.0,
+    "squeeze_phase": 1.0,
+    "supersedes": "campaign_config.py (box A, sha 2468949e...41f6)"
+  },
+  "sha256": "376322257320b50db36d5d76541a42a3c7f18033788824ea9f384414538d09c0"
+}
